@@ -182,12 +182,11 @@ forever(function () {
         Fall()
         FallBig()
     } else if (game.runtime() >= 30000 && game.runtime() < 60000) {
-        scaling.scaleByPixels(Block, 1, ScaleDirection.Uniformly, ScaleAnchor.Middle)
         FallBig2()
         Fall2()
+        scaling.scaleToPixels(Block, 20, ScaleDirection.Horizontally, ScaleAnchor.Middle)
     } else if (game.runtime() >= 60000 && game.runtime() < 120000) {
         FallBigEnd()
-        scaling.scaleByPixels(Block, 5, ScaleDirection.Uniformly, ScaleAnchor.Middle)
     } else {
         Fall()
         Fall2()
